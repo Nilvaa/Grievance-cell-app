@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_mygrie"
+        android:title="My Grievance"
+        android:titleTextColor="@color/mauve"
+        android:icon="@drawable/review"/>
+    <item
+        android:id="@+id/action_grie"
+        android:title="Grievance"
+        android:titleTextColor="@color/mauve"
+        android:icon="@drawable/grrrr"/>
+
+    <item
+        android:id="@+id/action_appoint"
+        android:title="Appointment"
+        android:titleTextColor="@color/mauve"
+        android:icon="@drawable/app"/>
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profile"
+        android:titleTextColor="@color/mauve"
+        android:icon="@drawable/prooo"/>
+</menu>

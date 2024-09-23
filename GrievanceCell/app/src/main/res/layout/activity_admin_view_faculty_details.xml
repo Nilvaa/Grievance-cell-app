@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.Admin_view_faculty_details">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mauve"
+        android:padding="10dp"
+        android:id="@+id/toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DETAILS"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/paprika"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="70dp"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="30dp"
+        android:id="@+id/card"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="90dp">
+
+            <ImageView
+                android:id="@+id/imge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:id="@+id/nam"
+                android:padding="5dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/paprika"
+                android:textColor="@color/mauve"
+                android:textSize="25dp"
+                android:hint="name"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColorHint="@color/mauve"></TextView>
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/paprika"
+                android:textColor="@color/mauve"
+                android:text="phone"></TextView>
+            <TextView
+                android:id="@+id/dep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/paprika"
+                android:textColor="@color/mauve"
+                android:text="address"></TextView>
+            <TextView
+                android:id="@+id/em"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/paprika"
+                android:textColor="@color/mauve"
+                android:text="email"></TextView>
+            <TextView
+                android:id="@+id/ph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/paprika"
+                android:textColor="@color/mauve"
+                android:text="phone"></TextView>
+            <TextView
+                android:id="@+id/gen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+
+                android:fontFamily="@font/paprika"
+                android:textColor="@color/mauve"
+                android:text="work hours"></TextView>
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/paprika"
+                android:textColor="@color/mauve"
+                android:text="description"></TextView>
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

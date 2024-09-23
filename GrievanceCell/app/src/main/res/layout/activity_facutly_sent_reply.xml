@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".faculty.Facutly_sent_reply">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mauve"
+            android:padding="10dp"
+            android:id="@+id/toolbar">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="REPLY"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/paprika"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/typ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/paprika"
+            android:hint="Regarding"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/mauve"
+            android:textColorHint="@color/mauve" />
+
+        <EditText
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/paprika"
+            android:hint="Description"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/mauve"
+            android:textColorHint="@color/mauve" />
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/paprika"
+            android:hint="Sent on"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/mauve"
+            android:textColorHint="@color/mauve" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="10dp"
+            android:padding="20dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/cons"
+            android:layout_weight="0.5"
+            android:elevation="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/paprika"
+                android:text="Detailed Reply"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/mauve"/>
+
+
+            <EditText
+                android:id="@+id/op"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edittext"
+                android:fontFamily="@font/paprika"
+                android:hint="Opinion"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/mauve"
+                android:textColorHint="@color/mauve" />
+
+            <EditText
+                android:id="@+id/descr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edittext"
+                android:fontFamily="@font/paprika"
+                android:hint="Description"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/mauve"
+                android:textColorHint="@color/mauve" />
+            <EditText
+                android:id="@+id/sdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/edittext"
+                android:fontFamily="@font/paprika"
+                android:hint="Solved by (date)"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/mauve"
+                android:textColorHint="@color/mauve" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnsent"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/mauve"
+            android:fontFamily="@font/paprika"
+            android:padding="10dp"
+            android:text="SENT"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

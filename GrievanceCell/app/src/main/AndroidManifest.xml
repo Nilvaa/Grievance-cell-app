@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="GrievEase"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GrievanceCell"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".faculty.Fac_edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.Faculty_profile"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Student_appointment_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".student.Student_view_appointments"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.Faculty_fix_appointment"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Appointment_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.Faculty_view_appointment"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.Faculty_home"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_update_status"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Admin_view_reply_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_view_reply"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Admin_view_grievance_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_view_grievance"
+            android:exported="false" />
+        <activity
+            android:name=".student.Student_edit_grievance"
+            android:exported="false" />
+        <activity
+            android:name=".student.StudentNotification"
+            android:exported="false" />
+        <activity
+            android:name=".student.Stud_view_reply"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.Facutly_sent_reply"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Faculty_view_grie_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.Faculty_view_grievance"
+            android:exported="false" />
+        <activity
+            android:name=".student.Edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Grievance_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".student.Student_home"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Student_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_view_stud"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_view_faculty_details"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Facutly_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_view_faculty"
+            android:exported="false" />
+        <activity
+            android:name=".Options"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_home"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.Faculty_reg"
+            android:exported="true" />
+        <activity
+            android:name=".student.Stud_reg"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
